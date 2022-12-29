@@ -3,6 +3,12 @@ const hamburger = document.getElementById("hamburger");
 const navbar = document.getElementById("navbar");
 const body = document.body;
 
+
+var preloader = document.getElementById("loading");
+function myFunc(){
+	preloader.style.display = "none";
+}
+
 theme.addEventListener("click", e => {
 	body.classList.toggle("dark-theme");
 	if (theme.innerText == "☀️") {
